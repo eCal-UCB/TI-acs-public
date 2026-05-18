@@ -1,0 +1,35 @@
+[project]
+name = "ti-acs"
+version = "1.0.0"
+description = "Reproduction code for Ju et al., Trajectory-integrated accessibility analysis of public EV charging stations (SCS, 2026)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Yi Ju" },
+    { name = "Jiaman Wu" },
+    { name = "Zhihan Su" },
+    { name = "Lunlong Li" },
+    { name = "Jinhua Zhao" },
+    { name = "Marta C. Gonzalez" },
+    { name = "Scott J. Moura" },
+]
+dependencies = [
+    "pandas>=2.0",
+    "geopandas>=0.14",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+    "openpyxl>=3.1",
+    "shapely>=2.0",
+    "pyproj>=3.6",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.0",
+]
+
+[tool.uv]
+managed = true
+
+[tool.setuptools.packages.find]
+include = ["ti_acs*"]

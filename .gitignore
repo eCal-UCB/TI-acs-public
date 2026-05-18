@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+
+# uv
+.python-version
+
+# Jupyter outputs that we DO want to commit live in outputs/figs/
+# but generated PDFs and intermediate caches we don't:
+outputs/figs/*.pdf
+outputs/cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

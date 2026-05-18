@@ -1,0 +1,39 @@
+Aggregated data in this repository (everything under `data/`, except the
+shapefiles in `data/shapefiles/` which carry their original public licenses)
+is released under the Creative Commons Attribution 4.0 International License
+(CC-BY 4.0).
+
+You are free to:
+  * Share — copy and redistribute the material in any medium or format
+  * Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+  * Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor endorses
+    you or your use.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+If you use this data, please cite the paper (see CITATION.cff).
+
+------------------------------------------------------------------------------
+Third-party data redistributed in this repository under their original terms:
+
+  * sf_bay_public_evcs.csv — extracted from the U.S. Department of Energy's
+    Alternative Fuels Data Center (AFDC, public domain, accessed June 2024).
+    https://afdc.energy.gov/data_download
+
+  * acs_tract_demographics.xlsx — aggregated from the U.S. Census Bureau's
+    American Community Survey (ACS) 1-year estimates 2012-2022 (public
+    domain). https://www.census.gov/programs-surveys/acs
+
+  * data/shapefiles/CA_County — California State GeoPortal (public domain).
+    https://gis.data.ca.gov/datasets/8713ced9b78a4abb97dc130a691a8695_0
+
+  * data/shapefiles/CA_Tract_BayArea — derived from TIGER/Line 2021 census
+    tract shapefile (U.S. Census Bureau, public domain), subset to the six
+    Bay Area counties (Alameda, Contra Costa, Marin, San Francisco, San
+    Mateo, Santa Clara) used in the study.
+    https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html

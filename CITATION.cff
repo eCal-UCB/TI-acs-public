@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "TI-acs reproduction code and aggregated data"
+authors:
+  - family-names: "Ju"
+    given-names: "Yi"
+    affiliation: "University of California, Berkeley"
+type: software
+repository-code: "https://github.com/eCal-UCB/TI-acs-public"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Trajectory-integrated accessibility analysis of public electric vehicle charging stations"
+  authors:
+    - family-names: "Ju"
+      given-names: "Yi"
+      affiliation: "University of California, Berkeley"
+    - family-names: "Wu"
+      given-names: "Jiaman"
+      affiliation: "University of California, Berkeley"
+    - family-names: "Su"
+      given-names: "Zhihan"
+      affiliation: "Tsinghua University"
+    - family-names: "Li"
+      given-names: "Lunlong"
+      affiliation: "The Hong Kong University of Science and Technology"
+    - family-names: "Zhao"
+      given-names: "Jinhua"
+      affiliation: "Massachusetts Institute of Technology"
+    - family-names: "Gonzalez"
+      given-names: "Marta C."
+      affiliation: "University of California, Berkeley"
+    - family-names: "Moura"
+      given-names: "Scott J."
+      affiliation: "University of California, Berkeley"
+  year: 2026
+  journal: "Sustainable Cities and Society"
+  doi: "10.1016/j.scs.2026.107491"
+  url: "https://doi.org/10.1016/j.scs.2026.107491"
+  identifiers:
+    - type: other
+      value: "arXiv:2505.12145"
+      description: "arXiv preprint"

@@ -1,0 +1,45 @@
+name: Update citation count
+
+# Refreshes .github/badges/citations.json from Semantic Scholar + Crossref.
+# Daily on a 06:17 UTC schedule (offset from the top of the hour to avoid the
+# GitHub Actions cron stampede). Also runnable on demand from the Actions tab.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write   # required to commit the badge JSON back
+
+concurrency:
+  group: update-citations
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Refresh badge JSON
+        run: python .github/scripts/fetch_citations.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- .github/badges/citations.json; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/badges/citations.json
+          NEW=$(jq -r .message .github/badges/citations.json)
+          git commit -m "chore: refresh citation count to ${NEW}"
+          git push
