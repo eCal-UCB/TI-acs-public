@@ -34,7 +34,9 @@
 
 Let $f_i(t)$ be individual $i$'s location at time $t \in [0, T]$ (e.g. one day), and $\mathcal{N}(s; d)$ the set of public chargers within walking distance $d$ of location $s$ (we use $d = 1$ km, ≈ 10–15 min walk). Our main metric is **TI-acs [hours]**:
 
-$$\text{TI-acs}^{(d)}_i \;\coloneqq\; \int_{0}^{T} \mathbf{1}\bigl\{|\mathcal{N}(f_i(t); d)| \ge 1\bigr\}\, dt$$
+<div align="center">
+<img src="assets/equation_tiacs.png" alt="TI-acs[d]_i := integral from 0 to T of 1{|N(f_i(t); d)| >= 1} dt" width="640">
+</div>
 
 i.e., the total time during which at least one public charger is within $d$ of where the individual is.
 
